@@ -1,0 +1,26 @@
+{
+  "summary": "Organic vegetable farming app",
+  "inScope": [
+    "List organic crops",
+    "Record a harvest",
+    "Show farm plots",
+    "Health endpoint for deploy verify"
+  ],
+  "outOfScope": [
+    "Production database",
+    "Payments"
+  ],
+  "ambiguities": [],
+  "technologies": ["node", "HTTP", "HTML", "fixture store"],
+  "components": [
+    { "name": "crops", "responsibility": "List organic crops", "language": "node" },
+    { "name": "harvests", "responsibility": "Record a harvest", "language": "node" },
+    { "name": "plots", "responsibility": "Show farm plots", "language": "node" },
+    { "name": "health", "responsibility": "Report ok for deploy verify", "language": "node" }
+  ],
+  "assumptions": [
+    "Fixture data only",
+    "Single Node HTTP app with a small UI"
+  ],
+  "architectureMarkdown": "# SHIP-200 — Organic vegetable farming\n\nA Node HTTP app with pages and APIs for crops, harvests, and plots.\nGET /health for Shipdeck verify.\n"
+}

@@ -1,0 +1,32 @@
+{
+  "name": "@shipdeck/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "test": "tsx --test src/**/*.test.ts"
+  },
+  "dependencies": {
+    "@shipdeck/shared": "*",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "ffmpeg-static": "^5.3.0",
+    "nanoid": "^5.1.0",
+    "pg": "^8.23.0",
+    "ssh2": "^1.17.0",
+    "yaml": "^2.9.1",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.5",
+    "@types/pg": "^8.23.1",
+    "@types/ssh2": "^1.15.6",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "shipdeck",
+  "version": "0.1.0",
+  "private": true,
+  "description": "ADF-style visual DevOps delivery platform — source to target with CI/CD and infra",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:api": "npm run build -w @shipdeck/shared && npm run dev -w @shipdeck/api",
+    "dev:web": "npm run dev -w @shipdeck/web",
+    "build": "npm run build -w @shipdeck/shared && npm run build -w @shipdeck/api && npm run build -w @shipdeck/web",
+    "start:api": "npm run start -w @shipdeck/api",
+    "test": "npm run build -w @shipdeck/shared && npm run test -w @shipdeck/api"
+  }
+}

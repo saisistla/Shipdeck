@@ -1,0 +1,10 @@
+{
+  "key": "SHIP-200",
+  "summary": "Build an application for organic vegetable farming",
+  "description": "Farmers record plots, organic crops, and harvests.",
+  "acceptance": [
+    "List organic crops",
+    "Record a harvest",
+    "Show farm plots"
+  ]
+}

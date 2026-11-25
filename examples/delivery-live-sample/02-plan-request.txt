@@ -1,0 +1,9 @@
+You are an enterprise delivery architect. Return JSON only.
+
+Return only JSON with keys summary, inScope, outOfScope, ambiguities, architectureMarkdown, technologies, components, assumptions.
+components is an array of {name, responsibility, language}.
+languages must be chosen from the allow-list. Do not include secrets.
+Allow-list: node, python
+Ticket SHIP-200: Build an application for organic vegetable farming
+Farmers record plots, organic crops, and harvests. Non-production runs use fixture data only.
+Acceptance: List organic crops; Record a harvest; Show farm plots

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none" role="img" aria-label="Shipdeck">
+  <defs>
+    <linearGradient id="deck" x1="8" y1="6" x2="34" y2="36" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0E7A7F"/>
+      <stop offset="1" stop-color="#08474A"/>
+    </linearGradient>
+  </defs>
+  <rect width="40" height="40" rx="11" fill="url(#deck)"/>
+  <path d="M6 29.2c2.2 2.4 6.6 3.8 14 3.8s11.8-1.4 14-3.8H6z" fill="#C26A2D"/>
+  <path d="M8 11.5h14.2c2.9 0 5 1.7 5 4.1 0 1.9-1.1 3.4-2.9 4.1L28.8 26h-3.9l-4-5.1H12.2V26H8V11.5zm4.2 3v4h7.1c1.2 0 1.9-.6 1.9-1.7 0-1.2-.8-2.3-2.1-2.3h-6.9z" fill="#F4F7F8"/>
+  <rect x="8" y="8" width="9" height="2.2" rx="1" fill="#7EC8C4"/>
+  <circle cx="31" cy="10" r="2.2" fill="#E8A15A"/>
+</svg>

@@ -1,0 +1,12 @@
+node_modules
+.git
+.shipdeck-work
+data/*
+!data/.gitkeep
+*.log
+.env
+.env.local
+dist
+apps/web/dist
+apps/api/dist
+packages/shared/dist

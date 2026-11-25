@@ -1,0 +1,20 @@
+{
+  "files": [
+    {
+      "path": "package.json",
+      "contents": "{\n  \"name\": \"ship-200-organic-vegetable-farming\",\n  \"private\": true,\n  \"type\": \"module\",\n  \"scripts\": { \"start\": \"node src/app.js\", \"test\": \"node --test\" }\n}\n"
+    },
+    {
+      "path": "src/app.js",
+      "contents": "export function health() {\n  return { status: \"ok\", ticket: \"SHIP-200\", product: \"Organic vegetable farming\" };\n}\n\nexport const store = {\n  crops: [{ id: \"crops-1\", name: \"Tomato\", source: \"fixture\" }],\n  harvests: [{ id: \"harvests-1\", name: \"Morning pick\", source: \"fixture\" }],\n  plots: [{ id: \"plots-1\", name: \"North field\", source: \"fixture\" }]\n};\n\nexport function list(entity) {\n  if (!store[entity]) throw new Error(\"unknown resource\");\n  return store[entity];\n}\n"
+    },
+    {
+      "path": "public/index.html",
+      "contents": "<!doctype html><html><body><h1>Organic vegetable farming</h1><p>SHIP-200</p><h2>Crops</h2><p>Tomato</p></body></html>\n"
+    },
+    {
+      "path": "README.md",
+      "contents": "# Organic vegetable farming\n\nBuilt from SHIP-200. Run: node src/app.js\n"
+    }
+  ]
+}

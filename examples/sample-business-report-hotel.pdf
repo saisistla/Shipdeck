@@ -1,0 +1,34 @@
+%PDF-1.4
+1 0 obj << /Type /Catalog /Pages 2 0 R >> endobj
+2 0 obj << /Type /Pages /Kids [3 0 R] /Count 1 >> endobj
+3 0 obj << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >> endobj
+4 0 obj << /Length 1058 >> stream
+BT /F1 12 Tf 48 760 Td (Late checkout desk) Tj ET
+BT /F1 12 Tf 48 738 Td (Guests who stay past noon need the front desk to see which room is still occupied.) Tj ET
+BT /F1 12 Tf 48 716 Td (The paper list is hard to read when two clerks are checking rooms at the same time.) Tj ET
+BT /F1 12 Tf 48 694 Td (Who it is for: Front desk clerks at one hotel.) Tj ET
+BT /F1 12 Tf 48 672 Td (A single page that lists today's late rooms and lets a clerk mark one room as vacated.) Tj ET
+BT /F1 12 Tf 48 650 Td (Version one) Tj ET
+BT /F1 12 Tf 48 628 Td (Show today's rooms that asked to stay past noon.) Tj ET
+BT /F1 12 Tf 48 606 Td (Mark one room as vacated.) Tj ET
+BT /F1 12 Tf 48 584 Td (Keep billing, minibar, and housekeeping notes off this page.) Tj ET
+BT /F1 12 Tf 48 562 Td (Not in version one) Tj ET
+BT /F1 12 Tf 48 540 Td (Guest billing.) Tj ET
+BT /F1 12 Tf 48 518 Td (Minibar charges.) Tj ET
+BT /F1 12 Tf 48 496 Td (A full property-management suite.) Tj ET
+BT /F1 12 Tf 48 474 Td (The first version uses sample room numbers, not the live hotel system.) Tj ET
+endstream
+endobj
+5 0 obj << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000001350 00000 n 
+trailer << /Size 6 /Root 1 0 R >>
+startxref
+1420
+%%EOF

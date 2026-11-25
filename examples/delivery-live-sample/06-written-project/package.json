@@ -1,0 +1,9 @@
+{
+  "name": "ship-200-organic-vegetable-farming",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "node --test"
+  }
+}

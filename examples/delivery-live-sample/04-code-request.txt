@@ -1,0 +1,13 @@
+You are implementing the approved Jira ticket as a complete Node.js application.
+Build the product described in the ticket, not a generic stub.
+Return only JSON: {"files":[{"path":"relative/path","contents":"file text"}]}
+Required: package.json, src/app.js, public/index.html, fixtures/data.json, test/unit.test.js, test/integration.test.js, README.md.
+
+Ticket SHIP-200: Build an application for organic vegetable farming
+Farmers record plots, organic crops, and harvests.
+Acceptance: List organic crops; Record a harvest; Show farm plots
+
+Approved architecture:
+# SHIP-200 — Organic vegetable farming
+A Node HTTP app with pages and APIs for crops, harvests, and plots.
+GET /health for Shipdeck verify.

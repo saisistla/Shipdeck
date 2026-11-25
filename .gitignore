@@ -1,0 +1,20 @@
+.shipdeck-work
+node_modules
+dist
+build
+.env
+.env.local
+*.log
+.DS_Store
+coverage
+# Terraform generated artifacts — never in module sources or commits
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+terraform.tfvars
+tfplan
+release/
+# Runtime data and secrets — keep the directory, not local state
+data/*
+!data/.gitkeep

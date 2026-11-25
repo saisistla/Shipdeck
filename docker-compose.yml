@@ -1,0 +1,58 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: shipdeck
+      POSTGRES_PASSWORD: shipdeck
+      POSTGRES_DB: shipdeck
+    ports:
+      - 5432:5432
+    volumes:
+      - shipdeck-pg:/var/lib/postgresql/data
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - pg_isready -U shipdeck -d shipdeck
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    restart: unless-stopped
+  api:
+    build:
+      context: .
+      target: api
+    ports:
+      - 4000:4000
+    environment:
+      PORT: "4000"
+      DATABASE_URL: postgres://shipdeck:shipdeck@db:5432/shipdeck
+      SHIPDECK_SIMULATE: ${SHIPDECK_SIMULATE:-true}
+      SHIPDECK_TF_APPLY: ${SHIPDECK_TF_APPLY:-false}
+      SHIPDECK_API_TOKEN: ${SHIPDECK_API_TOKEN:-}
+      SHIPDECK_SECRETS_KEY: ${SHIPDECK_SECRETS_KEY:-}
+      SHIPDECK_REQUIRE_APPROVAL: ${SHIPDECK_REQUIRE_APPROVAL:-false}
+      SHIPDECK_REQUIRE_APPROVAL_FOR_TF: ${SHIPDECK_REQUIRE_APPROVAL_FOR_TF:-true}
+    volumes:
+      - shipdeck-data:/app/data
+      - shipdeck-work:/app/.shipdeck-work
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+    image: docker.io/plavauk/shipdeck:api-v1.0.1
+  web:
+    build:
+      context: .
+      target: web
+    ports:
+      - 8088:80
+    environment:
+      API_ORIGIN: http://api:4000
+    depends_on:
+      - api
+    restart: unless-stopped
+    image: docker.io/plavauk/shipdeck:web-v1.0.1
+volumes:
+  shipdeck-data: null
+  shipdeck-work: null
+  shipdeck-pg: null
